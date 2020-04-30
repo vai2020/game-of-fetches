@@ -9,6 +9,8 @@ class JohnSnow extends React.Component {
             bornIn: []
          }
         }
+        
+        //the following componentDidMount  lifecycle used axis.get to make a request to the website to obtain the data for the variable snowBorn
         componentDidMount() {
             axios.get("https://cors-anywhere.herokuapp.com/https://anapioficeandfire.com/api/characters/583")
             .then(res => { const John = res.data;
@@ -24,8 +26,8 @@ class JohnSnow extends React.Component {
         render() {
         return(
             <div>
-                <h1>Q0: When was John Snow born?</h1>
-                <h1>A0: John Snow was born: {this.state.bornIn}</h1>   
+                <h1>Q: When was John Snow born?</h1>
+                <h1>A: John Snow was born: {this.state.bornIn}</h1>   
             </div>
         )
     }

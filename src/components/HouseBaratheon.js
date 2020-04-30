@@ -13,9 +13,9 @@ class HouseBaratheon extends React.Component {
             .then(res => {
             
                 this.setState({second: res.data.seats[1]});
-                console.log(this.state.second)
+                console.log(this.state.second)   //handle success
     
-            }).catch(error=>{
+            }).catch(error=>{              //handle error
             console.log(error);
 
         })
