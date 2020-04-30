@@ -24,11 +24,11 @@ class JohnSnow extends React.Component {
         render() {
         return(
             <div>
-                <h1>Q1: When was John Snow born?</h1>
-                <h1>A1: John Snow was born: {this.state.bornIn}</h1>   
+                <h1>Q0: When was John Snow born?</h1>
+                <h1>A0: John Snow was born: {this.state.bornIn}</h1>   
             </div>
         )
-    }ß
+    }
 
 }
 
